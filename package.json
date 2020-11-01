@@ -1,0 +1,29 @@
+{
+  "name": "mern-ecommerce-app",
+  "version": "1.0.0",
+  "description": "A shopping application full deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node seeder",
+    "data:destroy": "node seeder -d"
+  },
+  "author": "Mohammad Sazzad Bin Anwar",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
