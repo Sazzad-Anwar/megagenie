@@ -22,7 +22,7 @@ return <header className='sticky-top'>
     <Navbar bg="dark" variant='dark' className="py-1" expand="lg" collapseOnSelect>
         <Container>
             <LinkContainer to="/">
-                <Navbar.Brand>MegaGinie</Navbar.Brand>
+                <Navbar.Brand>MegaGenie</Navbar.Brand>
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
