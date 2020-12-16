@@ -9,12 +9,13 @@ const Products = ({ product }) => {
     return <>
         <Card className="my-1 p-3 rounded shadow-lg">
             <Link to={`/product/${product._id}`}>
-                <Card.Img src={product.image} variant="top" />
+                <Card.Img src={product.image} height='174' variant="top" />
             </Link>
             <Card.Body>
                 <Link to={`/product/${product._id}`}>
                     <Card.Title as="div">
-                        <strong>{product.name}</strong>
+                        {product.name.length > 37 ? <strong>{(product.name).slice(0,37)+'...'}</strong>:<strong>{product.name} <br/></strong>}
+                        
                     </Card.Title>
                 </Link>
 

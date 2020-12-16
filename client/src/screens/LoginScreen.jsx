@@ -35,7 +35,7 @@ const LoginScreen = ({ location, history }) => {
     return <Container>
         <Row className='justify-content-md-center'>
             <Col xs={12} md={6}>
-                <h1>Hi Sign In</h1>
+                <h1>Sign In</h1>
                 {error && <Message varient="danger">{error}
                 </Message>}
                 {loading && <Loader />}
@@ -60,7 +60,7 @@ const LoginScreen = ({ location, history }) => {
                     <Row className="py-3">
                         <Col>
                             New Customer?{' '} 
-                            <Link to={'/register'}><span style={{ color: 'blue', fontWeight: '900' }}> Register Here </span></Link>
+                            <Link to={'/register'}><span style={{ color: 'blue', fontWeight: '900' }}> Register </span></Link>
                         </Col>
                     </Row>
                 </Form>

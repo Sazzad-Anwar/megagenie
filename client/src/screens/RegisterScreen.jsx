@@ -43,7 +43,7 @@ const RegisterScreen = ({ location, history }) => {
     return <Container>
         <Row className='justify-content-md-center'>
             <Col xs={12} md={6}>
-                <h1>Sign Up</h1>
+                <h1>Sign Up Here</h1>
                 {message && <Message varient="danger">{message}
                 </Message>}
                 {error && <Message varient="danger">{error}
@@ -53,7 +53,7 @@ const RegisterScreen = ({ location, history }) => {
                     <Form.Group controlId='name'>
                         <Form.Label>Name</Form.Label>
                         <Form.Control
-                            type="name"
+                            type="text"
                             placeholder="Enter Name" value={name} onChange={e => setName(e.target.value)}
                         ></Form.Control>
                     </Form.Group>
@@ -86,7 +86,7 @@ const RegisterScreen = ({ location, history }) => {
                     <Row className="py-3">
                         <Col>
                             Have an Account?{' '} 
-                            <Link to={'/login'}><span style={{ color: 'blue', fontWeight: '900' }}> Login Here </span></Link>
+                            <Link to={'/login'}><span style={{ color: 'blue', fontWeight: '900' }}> Login </span></Link>
                         </Col>
                     </Row>
                 </Form>
